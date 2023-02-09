@@ -59,7 +59,7 @@
             top: 10rem;
         }
         
-        @media only screen and (max-width: 56.25em){
+        @include respond(tab-port) {
             & {
                 float: left;
                 position: relative;
@@ -127,6 +127,7 @@
         display: inline-block;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
 
     }
@@ -135,22 +136,6 @@
         font-size: 1.3rem;
     }
 }
-
-// .icon-basic-world:before {
-//     content: "";
-// // }
-
-// .icon-basic-compass:before {
-//     content: "";
-// // }
-
-// .icon-basic-map:before {
-//     content: "";
-// }
-
-// .icon-basic-heart:before {
-//     content: "";
-// }
 
 // [class^="icon-"]:before, [class*=" icon-"]:before {
 //     font-family: "linea-basic-10" !important;
@@ -163,7 +148,7 @@
 //     -moz-osx-font-smoothing: grayscale;
 // }
 
-@media only screen and (max-width: 56.25em) {
+@include respond(tab-port) {
   .feature-box__icon {
     margin-bottom: 0;
   }
@@ -178,7 +163,6 @@
   }
 
   .row [class^="col-"] {
-    // width: 100% !important;
     width: 100% !important;
 
   }
